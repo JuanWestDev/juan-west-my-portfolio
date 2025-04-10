@@ -34,7 +34,7 @@ const ListProjects = (props) => {
             src={props.companyImg}
           />
           <a
-            href={props.web}
+            href="/"
             className="text-neutral-300 text-sm hover:underline transition"
             aria-label={`Visit ${props.companyName} website`}
           >
