@@ -5,6 +5,7 @@ import GradientBottomRight from "@/components/GradientBottomRight";
 import ProjectsBuilder from "@/components/ProjectsBuilder";
 import GradientBottomLeft from "@/components/GradientBottomLeft";
 import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
+import "./globals.css";
 
 export default function Home() {
   console.log("What am I doing here?(Home) -- SERVER/CLIENT");
