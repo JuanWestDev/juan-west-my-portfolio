@@ -18,7 +18,7 @@
   --font-custom: "grotesk";
 
   --animate-fade-up: fade-up 1s;
-  --animate-pulse-slow: pulse 10s linear infinite;
+  --animate-pulse-slow: pulse 10s infinite;
   --animate-grow-size: grow-it 2s forwards;
   --animate-glow: glow 15s linear infinite;
   --animate-rotate-border: border-rotate 3s linear infinite;
@@ -158,15 +158,21 @@
   }
 
   .gradient-1 {
-    @apply bg-[rgba(30,34,83,0.43)] blur-[130px] w-[570px] h-[264px];
+    @apply bg-[rgba(30,34,83,0.43)] blur-[70px] w-[400px] h-[200px];
+    will-change: transform;
+    contain: paint;
   }
 
   .gradient-2 {
-    @apply bg-[rgba(33,34,129,0.43)] blur-[130px] w-[570px] h-[264px];
+    @apply bg-[rgba(33,34,129,0.43)] blur-[70px] w-[400px] h-[200px];
+    will-change: transform;
+    contain: paint;
   }
 
   .gradient-3 {
-    @apply bg-[rgba(141,39,133,0.43)] blur-[130px] w-[570px] h-[264px];
+    @apply bg-[rgba(141,39,133,0.43)] blur-[70px] w-[400px] h-[200px];
+    will-change: transform;
+    contain: paint;
   }
 }
 
@@ -244,6 +250,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-black;
   }
 }
