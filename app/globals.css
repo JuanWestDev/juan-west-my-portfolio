@@ -18,7 +18,8 @@
   --font-custom: "grotesk";
 
   --animate-fade-up: fade-up 1s;
-  --animate-pulse-slow: pulse 10s infinite;
+  /* --animate-pulse-slow: pulse 10s infinite; */
+  --animate-slower: pulse-slower 10s ease-in-out infinite;
   --animate-grow-size: grow-it 2s forwards;
   --animate-glow: glow 15s linear infinite;
   --animate-rotate-border: border-rotate 3s linear infinite;
@@ -92,6 +93,18 @@
     }
   }
 
+  @keyframes pulse-slower {
+    0% {
+      transform: scale(2);
+    }
+    50% {
+      transform: scale(2.5);
+    }
+    100% {
+      transform: scale(2);
+    }
+  }
+
   @keyframes fade-up {
     0% {
       opacity: 0;
@@ -158,19 +171,19 @@
   }
 
   .gradient-1 {
-    @apply bg-[rgba(30,34,83,0.43)] blur-[70px] w-[400px] h-[200px];
+    @apply bg-[rgba(30,34,83,0.43)] blur-[40px] w-[300px] h-[200px] rounded-full;
     will-change: transform;
     contain: paint;
   }
 
   .gradient-2 {
-    @apply bg-[rgba(33,34,129,0.43)] blur-[70px] w-[400px] h-[200px];
+    @apply bg-[rgba(33,34,129,0.43)] blur-[40px] w-[300px] h-[200px] rounded-full;
     will-change: transform;
     contain: paint;
   }
 
   .gradient-3 {
-    @apply bg-[rgba(141,39,133,0.43)] blur-[70px] w-[400px] h-[200px];
+    @apply bg-[rgba(141,39,133,0.23)] blur-[40px] w-[300px] h-[200px] rounded-full;
     will-change: transform;
     contain: paint;
   }
@@ -250,6 +263,6 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-black;
+    @apply bg-background text-foreground;
   }
 }

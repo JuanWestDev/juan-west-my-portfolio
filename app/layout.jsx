@@ -1,6 +1,11 @@
 import React from "react";
 import { Roboto } from "next/font/google";
 import GradientTopSection from "@/components/GradientTopSection";
+import GradientTopRight from "@/components/GradientTopRight";
+import GradientTopLeft from "@/components/GradientTopLeft";
+import GradientBottomRight from "@/components/GradientBottomRight";
+import GradientBottomLeft from "@/components/GradientBottomLeft";
+import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -24,6 +29,13 @@ export default function RootLayout({ children }) {
             <NavigationBar home="/" about="/about" projects="/projects" />
           </header>
           <GradientTopSection />
+          <GradientTopRight />
+          <GradientTopLeft />
+          <GradientBottomRight />
+          <GradientBottomLeft />
+          <GradientBottomLeft />
+          <GradientBottomMiddleRight />
+          <GradientBottomRight />
           {children}
           <section className="mt-15 mb-5 border-[1.5px] rounded-full bg-neutral-800 border-neutral-800 opacity-60 mx-auto animate-grow-size ease-out"></section>
           <footer className=" mx-auto pb-10 container w-full md:w-auto text-neutral-300 px-4 md:px-0 z-50 animate-fade-up">
