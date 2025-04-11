@@ -10,6 +10,9 @@ const Links = (props) => {
           height="24"
           src={props.src}
           viewBox="0 0 24 24"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
           className="fiter invert"
         />
         <Shine />

@@ -32,6 +32,9 @@ const ListProjects = (props) => {
             alt={props.web}
             className="w-6 h-6 mx-2"
             src={props.companyImg}
+            loading="lazy"
+            decoding="async"
+            data-nimg="fill"
           />
           <a
             href="/"

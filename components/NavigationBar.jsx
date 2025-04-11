@@ -18,6 +18,9 @@ const NavigationBar = (props) => {
             <img
               alt="Juan West"
               src="JuanWest.jpg"
+              loading="lazy"
+              decoding="async"
+              data-nimg="fill"
               className=" tranisition-transform duration-500 hover:scale-125 hover:-rotate-12  rounded-full  absolute h-full w-full inset-0 object-cover text-transparent object-[center_25%] "
             />
           </div>
@@ -30,6 +33,9 @@ const NavigationBar = (props) => {
                 src="za-flag.png"
                 width="20"
                 height="20"
+                loading="lazy"
+                decoding="async"
+                data-nimg="fill"
                 className="inline-block mr-1 -mt-1"
               />
               <span className="font-roboto">Based in South Africa</span>
@@ -44,6 +50,9 @@ const NavigationBar = (props) => {
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png"
                 width="25"
                 height="25"
+                loading="lazy"
+                decoding="async"
+                data-nimg="fill"
                 className="filter invert"
               />
             </DropdownMenuTrigger>

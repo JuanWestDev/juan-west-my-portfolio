@@ -6,6 +6,9 @@ const ListTechStack = (props) => {
       <img
         alt={props.src + "logo"}
         src={props.src}
+        loading="lazy"
+        decoding="async"
+        data-nimg="fill"
         className="filter invert bg-transparent w-[17px] h-[17px] sm:w-[20px] sm:h-[20px] "
       />
       <p className="ml-2 mr-1 hidden text-sm sm:block sm:text-neutral-300">

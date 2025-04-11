@@ -9,6 +9,9 @@ const ListItem = (props) => {
           height="48"
           src={props.src}
           className="bg-transparent rounded-full object-center"
+          loading="lazy"
+          decoding="async"
+          data-nimg="fill"
         ></img>
       </div>
       <div className="flex flex-col gap-1 text-white">
