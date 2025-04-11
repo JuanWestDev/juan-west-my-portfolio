@@ -6,6 +6,7 @@ import GradientBottomRight from "@/components/GradientBottomRight";
 import GradientBottomLeft from "@/components/GradientBottomLeft";
 import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
 import GradientTopSection from "@/components/GradientTopSection";
+import GradientTopRight from "@/components/GradientTopRight";
 import "./globals.css";
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
     <>
       <Details />
 
-      <section className="mt-15 mb-15 border-[1.5px] rounded-full bg-neutral-800 border-neutral-800 opacity-60 mx-auto animate-grow-size ease-out"></section>
+      <section className="mt-15 mb-15 border-[1.5px] rounded-full bg-neutral-800 border-neutral-800 opacity-60 mx-auto "></section>
       {/* <GradientTopLeft />
       <GradientBottomRight />
       <GradientBottomLeft /> */}

@@ -1,6 +1,12 @@
 import React from "react";
 import Links from "./Links.jsx";
 import Technologies from "./Technologies.jsx";
+import GradientBottomLeft from "./GradientBottomLeft.jsx";
+import GradientBottomMiddleRight from "./GradientBottomMiddleRight.jsx";
+import GradientBottomRight from "./GradientBottomRight.jsx";
+import GradientTopLeft from "./GradientTopLeft.jsx";
+import GradientTopRight from "./GradientTopRight.jsx";
+import GradientTopSection from "./GradientTopSection.jsx";
 
 const Details = () => {
   console.log("Suppose to not show in terminal");
