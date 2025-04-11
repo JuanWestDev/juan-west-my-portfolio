@@ -6,6 +6,7 @@ import GradientTopLeft from "@/components/GradientTopLeft";
 import GradientBottomRight from "@/components/GradientBottomRight";
 import GradientBottomLeft from "@/components/GradientBottomLeft";
 import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
+import GradientBottomMiddleLeft from "@/components/GradientBottomMiddleLeft";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import LenisWrapper from "@/components/LenisWrapper";
@@ -30,7 +31,6 @@ export default function RootLayout({ children }) {
             <header className="fixed left-1/2 z-[900] -translate-x-1/2 w-full md:w-auto">
               <NavigationBar home="/" about="/about" projects="/projects" />
             </header>
-
             <GradientTopSection />
             <GradientTopRight />
             <GradientTopLeft />
@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
             <GradientBottomLeft />
             <GradientBottomLeft />
             <GradientBottomMiddleRight />
+            <GradientBottomMiddleLeft />
             <GradientBottomRight />
             {children}
             <section className="mt-15 mb-5 border-[1.5px] rounded-full bg-neutral-800 border-neutral-800 opacity-60 mx-auto "></section>
