@@ -1,6 +1,5 @@
-
-import { NextResponse } from "next/server";
 import { Redis } from "@upstash/redis";
+import { NextResponse } from "next/server";
 
 const redis = new Redis({
   url: process.env.REDIS_URL,
@@ -35,7 +34,10 @@ export async function GET() {
     return NextResponse.json(data);
   } catch (error) {
     console.error("Error in GET /api/likes:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 }
 
@@ -49,6 +51,9 @@ export async function POST() {
     return NextResponse.json(data);
   } catch (error) {
     console.error("Error in POST /api/likes:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Internal server error" },
+      { status: 500 }
+    );
   }
 }
