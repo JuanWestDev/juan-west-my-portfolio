@@ -1,21 +1,31 @@
+// app/api/likes/route.js
 import { Redis } from "@upstash/redis";
 import { NextResponse } from "next/server";
 
-const redis = new Redis({
-  url: process.env.REDIS_URL,
-  token: process.env.REDIS_TOKEN,
-});
+// Only initialize Redis if environment variables are present
+const redis =
+  process.env.REDIS_URL && process.env.REDIS_TOKEN
+    ? new Redis({
+        url: process.env.REDIS_URL,
+        token: process.env.REDIS_TOKEN,
+      })
+    : null;
 
 const LIKES_KEY = "likes_data";
 
 const initializeLikesData = async () => {
+  if (!redis) {
+    console.log("Redis not initialized, returning default data");
+    return { likes: 0, version: 1 };
+  }
+
   const existingData = await redis.get(LIKES_KEY);
   if (!existingData) {
     const initialData = { likes: 0, version: 1 };
     await redis.set(LIKES_KEY, JSON.stringify(initialData));
     return initialData;
   }
-  return JSON.parse(existingData);
+  return existingData; // No need for JSON.parse, Upstash already parses the JSON string
 };
 
 const getLikesData = async () => {
@@ -24,6 +34,10 @@ const getLikesData = async () => {
 };
 
 const updateLikesData = async (newData) => {
+  if (!redis) {
+    console.log("Redis not initialized, skipping update");
+    return;
+  }
   await redis.set(LIKES_KEY, JSON.stringify(newData));
 };
 
