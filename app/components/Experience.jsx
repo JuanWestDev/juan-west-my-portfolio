@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import TabButton from "./TabButton";
-import workList from "../lib/workList";
+import { useState } from "react";
+import workList from "../../lib/workList";
 import ListItem from "./ListItem";
+import TabButton from "./TabButton";
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState("Work");

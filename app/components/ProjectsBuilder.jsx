@@ -1,6 +1,5 @@
-import React from "react";
+import projectsList from "../../lib/projectsList";
 import ListProjects from "./ListProjects";
-import projectsList from "../lib/projectsList";
 
 const ProjectsBuilder = () => {
   return (
