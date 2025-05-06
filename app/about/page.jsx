@@ -25,8 +25,8 @@ export default function About() {
       <TopSection
         title="About"
         desc="  I'm a fullstack developer who fell in love with web development and enjoy
-            making a clean user experience. I love a challenge and am willing to
-            learn anything necessary to get the job done."
+            making a clean user experience. I love a challenge and am always ready to
+            learn about any new techonologies to stay up to date with the current market."
       />
       <Technologies />
     </>
