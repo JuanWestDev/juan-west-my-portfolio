@@ -1,12 +1,5 @@
-import React from "react";
-import Details from "@/components/Details";
-import ProjectsBuilder from "@/components/ProjectsBuilder";
-import GradientTopLeft from "@/components/GradientTopLeft";
-import GradientBottomRight from "@/components/GradientBottomRight";
-import GradientBottomLeft from "@/components/GradientBottomLeft";
-import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
-import GradientTopSection from "@/components/GradientTopSection";
-import GradientTopRight from "@/components/GradientTopRight";
+import Details from "@/app/components/Details";
+import ProjectsBuilder from "@/app/components/ProjectsBuilder";
 import "./globals.css";
 
 export default function Home() {
@@ -21,9 +14,6 @@ export default function Home() {
       <GradientBottomRight />
       <GradientBottomLeft /> */}
       <ProjectsBuilder />
-      {/* <GradientBottomLeft />
-      <GradientBottomMiddleRight />
-      <GradientBottomRight /> */}
     </>
   );
 }

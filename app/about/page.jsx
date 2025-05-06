@@ -1,6 +1,5 @@
-import React from "react";
-import TopSection from "@/components/TopSection";
-import Technologies from "@/components/Technologies";
+import Technologies from "@/app/components/Technologies";
+import TopSection from "@/app/components/TopSection";
 
 // const About = () => {
 //   console.log("What am I doing here?(About) -- SERVER/CLIENT");

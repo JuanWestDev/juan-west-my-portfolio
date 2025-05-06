@@ -1,13 +1,10 @@
-import React from "react";
 import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../components/ui/dropdown-menu.jsx";
+} from "./ui/dropdown-menu.jsx";
 
 const NavigationBar = (props) => {
   return (

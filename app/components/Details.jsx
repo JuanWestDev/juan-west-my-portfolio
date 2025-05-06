@@ -1,12 +1,6 @@
-import React from "react";
+import LikeButton from "./LikeButton.jsx";
 import Links from "./Links.jsx";
 import Technologies from "./Technologies.jsx";
-import GradientBottomLeft from "./GradientBottomLeft.jsx";
-import GradientBottomMiddleRight from "./GradientBottomMiddleRight.jsx";
-import GradientBottomRight from "./GradientBottomRight.jsx";
-import GradientTopLeft from "./GradientTopLeft.jsx";
-import GradientTopRight from "./GradientTopRight.jsx";
-import GradientTopSection from "./GradientTopSection.jsx";
 
 const Details = () => {
   console.log("Suppose to not show in terminal");
@@ -48,6 +42,7 @@ const Details = () => {
                 link="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbjHmlfvcWtwKtXgTsvzJmNCvvRVDGpFxqkqmgRWzwrzZfrhdWjLdcSNJVTnDqpCzdgq"
                 src="https://img.icons8.com/?size=100&id=85559&format=png&color=000000"
               />
+              <LikeButton />
             </div>
           </div>
         </main>

@@ -1,10 +1,5 @@
-import React from "react";
-import TopSection from "@/components/TopSection";
-import ProjectsBuilder from "@/components/ProjectsBuilder";
-import GradientTopLeft from "@/components/GradientTopLeft";
-import GradientBottomRight from "@/components/GradientBottomRight";
-import GradientBottomLeft from "@/components/GradientBottomLeft";
-import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
+import ProjectsBuilder from "@/app/components/ProjectsBuilder";
+import TopSection from "@/app/components/TopSection";
 
 export default function Projects() {
   return (

@@ -1,6 +1,5 @@
-import React from "react";
+import tech from "../../lib/tech";
 import ListTechStack from "./ListTechStack";
-import tech from "../lib/tech";
 
 // ring-4 ring-white shadow-[0_0_20px_10px_rgba(207,250,254,0.8)]
 // bg-conic/[from_var(--border-angle)] from-gray-950 via-cyan-200 to-gray-950

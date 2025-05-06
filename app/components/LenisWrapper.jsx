@@ -1,6 +1,6 @@
 "use client";
 
-import useLenis from "@/components/useLenis";
+import useLenis from "@/app/components/useLenis";
 
 export default function LenisWrapper({ children }) {
   useLenis();

@@ -1,15 +1,14 @@
-import React from "react";
+import Footer from "@/app/components/Footer";
+import GradientBottomLeft from "@/app/components/GradientBottomLeft";
+import GradientBottomMiddleLeft from "@/app/components/GradientBottomMiddleLeft";
+import GradientBottomMiddleRight from "@/app/components/GradientBottomMiddleRight";
+import GradientBottomRight from "@/app/components/GradientBottomRight";
+import GradientTopLeft from "@/app/components/GradientTopLeft";
+import GradientTopRight from "@/app/components/GradientTopRight";
+import GradientTopSection from "@/app/components/GradientTopSection";
+import LenisWrapper from "@/app/components/LenisWrapper";
+import NavigationBar from "@/app/components/NavigationBar";
 import { Roboto } from "next/font/google";
-import GradientTopSection from "@/components/GradientTopSection";
-import GradientTopRight from "@/components/GradientTopRight";
-import GradientTopLeft from "@/components/GradientTopLeft";
-import GradientBottomRight from "@/components/GradientBottomRight";
-import GradientBottomLeft from "@/components/GradientBottomLeft";
-import GradientBottomMiddleRight from "@/components/GradientBottomMiddleRight";
-import GradientBottomMiddleLeft from "@/components/GradientBottomMiddleLeft";
-import NavigationBar from "@/components/NavigationBar";
-import Footer from "@/components/Footer";
-import LenisWrapper from "@/components/LenisWrapper";
 import "./globals.css";
 
 const roboto = Roboto({
