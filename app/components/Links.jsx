@@ -1,4 +1,3 @@
-import React from "react";
 import Shine from "./Shine";
 
 const Links = (props) => {

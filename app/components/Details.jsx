@@ -39,7 +39,7 @@ const Details = () => {
                 src="https://img.icons8.com/?size=100&id=62856&format=png&color=000000"
               />
               <Links
-                link="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbjHmlfvcWtwKtXgTsvzJmNCvvRVDGpFxqkqmgRWzwrzZfrhdWjLdcSNJVTnDqpCzdgq"
+                link="mailto:juanwestworks@gmail.com"
                 src="https://img.icons8.com/?size=100&id=85559&format=png&color=000000"
               />
               <LikeButton />
