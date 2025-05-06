@@ -1,53 +1,54 @@
-import fs from "fs";
+
 import { NextResponse } from "next/server";
-import path from "path";
+import { Redis } from "@upstash/redis";
 
-const filePath = path.join(process.cwd(), "data", "likes.json");
+const redis = new Redis({
+  url: process.env.REDIS_URL,
+  token: process.env.REDIS_TOKEN,
+});
 
-const initializeLikesFile = () => {
-  if (!fs.existsSync(filePath)) {
-    fs.mkdirSync(path.dirname(filePath), { recursive: true });
-    fs.writeFileSync(filePath, JSON.stringify({ likes: 0 }));
+const LIKES_KEY = "likes_data";
+
+const initializeLikesData = async () => {
+  const existingData = await redis.get(LIKES_KEY);
+  if (!existingData) {
+    const initialData = { likes: 0, version: 1 };
+    await redis.set(LIKES_KEY, JSON.stringify(initialData));
+    return initialData;
   }
+  return JSON.parse(existingData);
 };
 
-const getLikes = () => {
-  initializeLikesFile();
-  const data = fs.readFileSync(filePath);
-  return JSON.parse(data).likes;
+const getLikesData = async () => {
+  const data = await initializeLikesData();
+  return data;
 };
 
-const updateLikes = (newLikes) => {
-  initializeLikesFile();
-  fs.writeFileSync(filePath, JSON.stringify({ likes: newLikes }));
+const updateLikesData = async (newData) => {
+  await redis.set(LIKES_KEY, JSON.stringify(newData));
 };
 
 export async function GET() {
   try {
-    const likes = getLikes();
-    console.log("GET /api/likes - Returning likes:", likes);
-    return NextResponse.json({ likes });
+    const data = await getLikesData();
+    console.log("GET /api/likes - Returning data:", data);
+    return NextResponse.json(data);
   } catch (error) {
     console.error("Error in GET /api/likes:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
 export async function POST() {
   try {
-    const currentLikes = getLikes();
-    const newLikes = currentLikes + 1;
-    updateLikes(newLikes);
+    const data = await getLikesData();
+    const newLikes = data.likes + 1;
+    data.likes = newLikes;
+    await updateLikesData(data);
     console.log("POST /api/likes - Updated likes:", newLikes);
-    return NextResponse.json({ likes: newLikes });
+    return NextResponse.json(data);
   } catch (error) {
     console.error("Error in POST /api/likes:", error);
-    return NextResponse.json(
-      { error: "Internal server error" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
