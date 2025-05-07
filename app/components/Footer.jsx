@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 
 const Footer = (props) => {
@@ -38,9 +37,7 @@ const Footer = (props) => {
           <h1 className=" text-sm sm:text-lg font-semibold">Connect</h1>
           <ul className="mt-2 pl-0 sm:pl-0.5  text-xs sm:text-lg font-thin">
             <li className="text-sm">
-              <Link href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbjHmlfvcWtwKtXgTsvzJmNCvvRVDGpFxqkqmgRWzwrzZfrhdWjLdcSNJVTnDqpCzdgq">
-                Email
-              </Link>
+              <Link href="mailto:juanwestworks@gmail.com">Email</Link>
             </li>
             <li className="text-sm">
               <Link href="https://github.com/juanwestdev">Github</Link>
