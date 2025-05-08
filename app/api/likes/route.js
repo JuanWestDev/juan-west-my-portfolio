@@ -1,8 +1,6 @@
-// app/api/likes/route.js
 import { Redis } from "@upstash/redis";
 import { NextResponse } from "next/server";
 
-// Only initialize Redis if environment variables are present
 const redis =
   process.env.REDIS_URL && process.env.REDIS_TOKEN
     ? new Redis({
@@ -25,7 +23,7 @@ const initializeLikesData = async () => {
     await redis.set(LIKES_KEY, JSON.stringify(initialData));
     return initialData;
   }
-  return existingData; // No need for JSON.parse, Upstash already parses the JSON string
+  return existingData;
 };
 
 const getLikesData = async () => {

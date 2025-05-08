@@ -80,10 +80,7 @@ const NavigationBar = (props) => {
             </li>
 
             <li className="relative z-10 px-2 md:px-4 text-center py-2 rounded-full cursor-pointer  hover:text-cyan-100 text-neutral-300">
-              <a
-                href="https://mail.google.com/mail/u/2/#inbox?compose=CllgCJfnbjHmlfvcWtwKtXgTsvzJmNCvvRVDGpFxqkqmgRWzwrzZfrhdWjLdcSNJVTnDqpCzdgq"
-                target="_blank"
-              >
+              <a href="mailto:juanwestworks@gmail.com" target="_blank">
                 Contact
               </a>
             </li>
