@@ -1,3 +1,4 @@
+import Script from "next/script";
 import Footer from "@/app/components/Footer";
 import GradientBottomLeft from "@/app/components/GradientBottomLeft";
 import GradientBottomMiddleLeft from "@/app/components/GradientBottomMiddleLeft";
@@ -46,6 +47,23 @@ export default function RootLayout({ children }) {
             </footer>
           </main>
         </LenisWrapper>
+          <Script id="ai-widget-config" strategy="beforeInteractive">
+            {`window.AI_WIDGET_CONFIG = {
+              serverUrl: "https://lekkerai-juanwest-production.up.railway.app",
+              position: "bottom-right",
+              brandColor: "#681ea4",
+              greeting: "Hi I am Juan's Personal Assistant! Ask me anything?",
+              businessName: "Juan West",
+              poweredByName: "LekkerAI",
+              poweredByUrl: "https://lekkerai.co.za",
+              logoDataUrl: "",
+              whatsappNumber: ""
+            };`}
+          </Script>
+          <Script
+            src="https://lekkerai-juanwest-production.up.railway.app/widget/embed.js"
+            strategy="afterInteractive"
+          />
       </body>
     </html>
   );
