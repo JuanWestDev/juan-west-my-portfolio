@@ -26,6 +26,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-pt-16">
       <body className={`${roboto.variable} antialiased  bg-black`}>
+        <head>
+        <link
+          rel="stylesheet"
+          href="https://lekkerai-juanwest-production.up.railway.app/widget/embed.css"
+        />
+      </head>
         <LenisWrapper>
           <main className="min-h-screen flex flex-col items-center bg-black relative overflow-hidden ">
             <header className="fixed left-1/2 z-[900] -translate-x-1/2 w-full md:w-auto">
