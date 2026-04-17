@@ -60,8 +60,8 @@ export default function RootLayout({ children }) {
               brandColor: "#681ea4",
               greeting: "Hi I am Juan's Personal Assistant! Ask me anything?",
               businessName: "Juan West",
-              poweredByName: "LekkerAI",
-              poweredByUrl: "https://lekkerai.co.za",
+              poweredByName: "Unknown",
+              poweredByUrl: "Unknown",
               logoDataUrl: "",
               whatsappNumber: ""
             };`}
