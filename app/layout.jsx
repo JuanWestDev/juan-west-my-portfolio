@@ -9,6 +9,7 @@ import GradientTopRight from "@/app/components/GradientTopRight";
 import GradientTopSection from "@/app/components/GradientTopSection";
 import LenisWrapper from "@/app/components/LenisWrapper";
 import NavigationBar from "@/app/components/NavigationBar";
+import ChatWidget from "@/app/components/ChatWidget";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 
