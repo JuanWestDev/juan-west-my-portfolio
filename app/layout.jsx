@@ -47,6 +47,7 @@ export default function RootLayout({ children }) {
             </footer>
           </main>
         </LenisWrapper>
+        <ChatWidget />
       </body>
     </html>
   );
