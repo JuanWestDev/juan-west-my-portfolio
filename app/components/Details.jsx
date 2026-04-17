@@ -20,9 +20,9 @@ const Details = () => {
 
           <div className="my-4 pl-2">
             <h2 className="text-l text-gray-50 font-thin md:text-l lg:text-xl font-roboto">
-              I'm a 24-year-old who presses buttons on my keyboard
+              I'm 25 years old and I proffesionally press buttons on my keyboard
               <br />
-              and makes things work on the internet.
+              to makes things work on the internet.
             </h2>
           </div>
 
