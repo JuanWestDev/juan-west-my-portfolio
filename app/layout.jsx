@@ -47,8 +47,7 @@ export default function RootLayout({ children }) {
             </footer>
           </main>
         </LenisWrapper>
-         <!-- Juan West AI Chat Widget -->
-<script src="https://factory.lekkerai.co.za/widget/embed.js" data-lekkerai="pk_baffefd8aacade20b29395e007af58af"></script>
+          <script src="https://factory.lekkerai.co.za/widget/embed.js" data-lekkerai="pk_baffefd8aacade20b29395e007af58af"></script>
       </body>
     </html>
   );
