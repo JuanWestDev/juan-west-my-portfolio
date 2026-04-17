@@ -26,12 +26,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-pt-16">
       <body className={`${roboto.variable} antialiased  bg-black`}>
-        <head>
-        <link
-          rel="stylesheet"
-          href="https://lekkerai-juanwest-production.up.railway.app/widget/embed.css"
-        />
-      </head>
         <LenisWrapper>
           <main className="min-h-screen flex flex-col items-center bg-black relative overflow-hidden ">
             <header className="fixed left-1/2 z-[900] -translate-x-1/2 w-full md:w-auto">
@@ -53,23 +47,8 @@ export default function RootLayout({ children }) {
             </footer>
           </main>
         </LenisWrapper>
-          <Script id="ai-widget-config" strategy="beforeInteractive">
-            {`window.AI_WIDGET_CONFIG = {
-              serverUrl: "https://lekkerai-juanwest-production.up.railway.app",
-              position: "bottom-right",
-              brandColor: "#681ea4",
-              greeting: "Hi I am Juan's Personal Assistant! Ask me anything?",
-              businessName: "Juan West",
-              poweredByName: "Unknown",
-              poweredByUrl: "Unknown",
-              logoDataUrl: "",
-              whatsappNumber: ""
-            };`}
-          </Script>
-          <Script
-            src="https://lekkerai-juanwest-production.up.railway.app/widget/embed.js"
-            strategy="afterInteractive"
-          />
+         <!-- Juan West AI Chat Widget -->
+<script src="https://factory.lekkerai.co.za/widget/embed.js" data-lekkerai="pk_baffefd8aacade20b29395e007af58af"></script>
       </body>
     </html>
   );
