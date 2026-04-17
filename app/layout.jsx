@@ -47,11 +47,6 @@ export default function RootLayout({ children }) {
             </footer>
           </main>
         </LenisWrapper>
-          <Script
-  src="https://factory.lekkerai.co.za/widget/embed.js"
-  data-lekkerai="pk_baffefd8aacade20b29395e007af58af"
-  strategy="lazyOnload"
-/>
       </body>
     </html>
   );
